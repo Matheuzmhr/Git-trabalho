@@ -1,0 +1,48 @@
+package controle;
+
+import java.util.Scanner;
+
+public class calculadora {
+	public static void main(String[] args) {
+
+		Scanner entrada = new Scanner(System.in);
+		Boolean continuar = true;
+
+		System.out.println("Bem vindo a calculadora!!!");
+		
+		while (continuar) {
+
+			System.out.print("Digite o Primeiro numero: ");
+			double primeiroNumero = entrada.nextDouble();
+
+			System.out.print("Digite o operador: + - / *: ");
+			String operador = entrada.nextLine();
+
+			System.out.print("Informe o segundo numero: ");
+			double segundoNumero = entrada.nextDouble();
+			
+			System.out.println("Digite 'sair' para que calcular ");
+
+			double resultado = 0;
+
+			if (operador.equals("+")) {
+				resultado = primeiroNumero + segundoNumero;
+
+			} else if (operador.equals("-")) {
+				resultado = primeiroNumero - segundoNumero;
+
+			} else if (operador.equals("/")) {
+				resultado = primeiroNumero / segundoNumero;
+
+			} else if (operador.equals("*")) {
+				resultado = primeiroNumero * segundoNumero;
+
+			}
+
+		}
+
+		entrada.close();
+
+	}
+
+}

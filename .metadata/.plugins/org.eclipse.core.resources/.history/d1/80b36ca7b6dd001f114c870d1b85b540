@@ -1,0 +1,21 @@
+package controle;
+
+import java.util.Scanner;
+
+public class ExerciciosControle {
+
+	public static void main(String[] args) {
+		
+		
+		
+		Scanner entrada = new Scanner (System.in);
+		
+		System.out.print("Informe o numero para verificar? ");
+		int numero = entrada.nextInt();
+		
+	
+		
+		entrada.close();
+
+	}
+}

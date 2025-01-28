@@ -1,0 +1,5 @@
+INDEX VERSION 1.134+/home/trixti/Área de trabalho/curso-Java/.metadata/.plugins/org.eclipse.jdt.core
+3189021885.index
+1865797976.index
+2424193266.index
+2927477128.index

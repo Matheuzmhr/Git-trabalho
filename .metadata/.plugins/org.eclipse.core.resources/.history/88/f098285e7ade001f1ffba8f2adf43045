@@ -15,8 +15,8 @@ public class ExerciciosControle {
 		nota = entrada.nextDouble();
 
 		if (nota >= 7.0) {
-			if (nota > 0 && nota > 10) {
-				System.out.println("Nota invalida, digite novamente!");
+			if (nota >= 0  nota > 10) {
+				System.out.println("Nota invalida!!");
 			} else {
 				System.out.println("Aprovado!");
 
@@ -25,6 +25,7 @@ public class ExerciciosControle {
 			System.out.println("Recuperação!");
 
 		} else {
+
 			System.out.println("Reprovado!");
 
 		}

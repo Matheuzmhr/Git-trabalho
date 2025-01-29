@@ -5,22 +5,18 @@ import java.util.Scanner;
 public class ExerciciosControle {
 
 	public static void main(String[] args) {
-
+		
 		Scanner entrada = new Scanner(System.in);
 
 		double nota = 0.0;
-
-		System.out.print("Insira sua nota? ");
-
+		
+		System.out.println("Insira sua nota? ");
+		
 		nota = entrada.nextDouble();
 
 		if (nota >= 7.0) {
-			if (nota > 0 && nota > 10) {
-				System.out.println("Nota invalida, digite novamente!");
-			} else {
-				System.out.println("Aprovado!");
+			System.out.println("Aprovado!");
 
-			}
 		} else if (nota > 7.0 || nota >= 4.0) {
 			System.out.println("Recuperação!");
 

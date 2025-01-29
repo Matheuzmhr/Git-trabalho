@@ -15,16 +15,16 @@ public class ExerciciosControle {
 		nota = entrada.nextDouble();
 
 		if (nota >= 7.0) {
-			if (nota > 0 && nota > 10) {
-				System.out.println("Nota invalida, digite novamente!");
-			} else {
-				System.out.println("Aprovado!");
-
+			if (nota <= 0 && nota > 10) {
+				System.out.println("Nota invalida!!");
 			}
+			System.out.println("Aprovado!");
+
 		} else if (nota > 7.0 || nota >= 4.0) {
 			System.out.println("Recuperação!");
 
 		} else {
+
 			System.out.println("Reprovado!");
 
 		}

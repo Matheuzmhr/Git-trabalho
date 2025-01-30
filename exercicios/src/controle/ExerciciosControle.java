@@ -8,26 +8,63 @@ public class ExerciciosControle {
 
 		Scanner entrada = new Scanner(System.in);
 
-		double nota = 0.0;
+		double somaNotas = 0.0;
 
-		System.out.print("Insira sua nota? ");
+		for (int i = 1; i <= 4; i++) {
 
-		nota = entrada.nextDouble();
+			double nota = 0.0;
 
-		if (nota >= 7.0) {
-			if (nota > 0 && nota > 10) {
-				System.out.println("Nota invalida, digite novamente!");
+			System.out.println("Digite sua nota no " + i + " bimestre?");
+			nota = entrada.nextDouble();
+
+			if (nota < 0 || nota > 10.0) {
+				System.out.print("Nota invalida, digite novamente!");
+				System.out.println();
+				i--;
+				continue;
+			}
+
+			somaNotas += nota;
+
+			if (nota >= 7 || nota >= 10) {
+				System.out.println("Parabens otima nota!!");
+				System.out.println();
+
+			} else if (nota >= 6 || nota == 5) {
+				System.out.println("Dentro da média!!");
+				System.out.println();
+
+
+			} else if (nota >= 4 || nota == 2) {
+
+				System.out.println("Precisa melhorar!!");
+				System.out.println();
+
+
 			} else {
-				System.out.println("Aprovado!");
+				System.out.println("Pessima nota!!");
+				System.out.println();
+
 
 			}
-		} else if (nota > 7.0 || nota >= 4.0) {
-			System.out.println("Recuperação!");
-
-		} else {
-			System.out.println("Reprovado!");
 
 		}
+		
+		Double media = somaNotas / 4;
+		System.out.println("Sua media é " + media);
+		System.out.println();
+		
+		if (media >=5 || media >= 10) {
+			System.out.println("Parabens você passou!!");
+			
+		} else {
+			System.out.println("Reprovado!!");
+			
+		}
+		
+		entrada.close();
+		
+
 	}
 
 }

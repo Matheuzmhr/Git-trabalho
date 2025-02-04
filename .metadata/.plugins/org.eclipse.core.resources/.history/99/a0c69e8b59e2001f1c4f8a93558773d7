@@ -8,21 +8,13 @@ public class ExerciciosControle {
 
 		Scanner entrada = new Scanner(System.in);
 
-		int maiorNumero = Integer.MIN_VALUE;
-		
-		System.out.println("Digite 10 números e, ao final, encontraremos o maior número.");
+		int maiorNumero = 0;
 
-		for (int i = 1; i <= 10; i++) {
-			System.out.print("Digite 10 numero " + i + " numero? ");
+		for (int i = 1; i == 10; i++) {
+			System.out.print("Digite 10 numero" + i + "numero");
 			int numero = entrada.nextInt();
-			
-			if (numero > maiorNumero) {
-				maiorNumero = numero;
-			}
 
 		}
-		
-		System.out.println("O maior número digitado foi: " + maiorNumero);
 
 		entrada.close();
 

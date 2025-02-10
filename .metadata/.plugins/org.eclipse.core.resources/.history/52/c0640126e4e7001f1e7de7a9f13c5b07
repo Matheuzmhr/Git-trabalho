@@ -1,0 +1,25 @@
+package Classe;
+
+public class DataTeste {
+	
+	public static void main(String[] args) {
+		
+		Data p1 = new Data();
+		p1.dia = 03;
+		p1.mes = 02;
+		p1.ano = 1998;
+		
+		Data p2 = new Data();
+		p2.dia = 17;
+		p2.mes = 03;
+		p2.ano = 2000;
+		
+		System.out.printf("Idade 01" + "%02d/%02d/%d\n", p1.dia, p1.mes, p1.ano);
+		System.out.printf("%02d/%02d/%d\n", p2.dia, p2.mes, p2.ano);
+		
+		int idade1 = 2025;
+		System.out.println(sua);
+		
+	}
+
+}

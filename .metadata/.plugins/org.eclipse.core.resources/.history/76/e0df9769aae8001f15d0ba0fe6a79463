@@ -1,0 +1,15 @@
+package Classe;
+
+public class metodo {
+	
+	int metodoTeste(int a,int b) {
+		
+		int resultado = a + b;
+		return resultado;
+		
+		System.out.println(resultado);
+		
+		
+	}
+
+}

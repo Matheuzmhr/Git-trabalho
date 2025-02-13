@@ -1,0 +1,22 @@
+package Classe;
+
+import java.util.Scanner;
+
+public class Exercicios10 {
+	
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Verifica o numero? ");
+		int num1 = scanner.nextInt();
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

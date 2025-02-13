@@ -14,14 +14,10 @@ public class DataTeste {
 		p2.mes = 03;
 		p2.ano = 2000;
 		
-		System.out.printf("Idade 01 - " + "%02d/%02d/%d\n", p1.dia, p1.mes, p1.ano);
-		System.out.printf("Idade 02 - " + "%02d/%02d/%d\n", p2.dia, p2.mes, p2.ano);
+		String dataFormatada1 = p1.obterDataFormatada();
 		
-		int idade1 = 2025 - p1.ano;
-		System.out.println("Sua idade é " + idade1);
-		
-		int idade2 = 2025 - p2.ano;
-		System.out.println("Sua idade é " + idade2);
+		System.out.println(dataFormatada1);
+		System.out.println(p2.obterDataFormatada());
 		
 	}
 

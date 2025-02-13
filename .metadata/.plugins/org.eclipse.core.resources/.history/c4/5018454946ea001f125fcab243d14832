@@ -1,0 +1,19 @@
+package Classe;
+
+import java.util.Scanner;
+
+public class Exercicios10 {
+	
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Digite o numero para verificar se é par ou impar");
+		
+		
+		
+		
+		
+	}
+
+}
